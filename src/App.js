@@ -5,9 +5,8 @@ import { Router } from "@reach/router";
 
 
 import { GlobalStyle } from "./styles/GlobalStyle";
-import Movie from "./Movie";
-import NotFound from "./NotFound";
 import Header from './components/elements/Header';
+import Movie from './pages/Movie';
 
 const App = () =>
     <>
