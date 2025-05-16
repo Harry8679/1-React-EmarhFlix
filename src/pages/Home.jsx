@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import HeroImage from "./elements/HeroImage";
-import SearchBar from "./elements/SearchBar";
-import Grid from "./elements/Grid";
-import MovieThumb from "./elements/MovieThumb";
-import Spinner from "./elements/Spinner";
-import LoadMoreBtn from "./elements/LoadMoreBtn";
 import { POPULAR_BASE_URL, SEARCH_BASE_URL, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from "../config";
 // Custom Hook
 import { useHomeFecth } from "./hooks/useHomeFetch";
 import NoImage from './images/no_image.jpg';
+import Spinner from '../components/elements/Spinner';
+import HeroImage from '../components/elements/HeroImage';
+import SearchBar from '../components/elements/SearchBar';
+import Grid from '../components/elements/Grid';
+import MovieThumb from '../components/elements/MovieThumb';
+import LoadMoreBtn from '../components/elements/LoadMoreBtn';
 
 const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
