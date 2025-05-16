@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { POPULAR_BASE_URL, SEARCH_BASE_URL, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from "../config";
 // Custom Hook
 import { useHomeFecth } from "./hooks/useHomeFetch";
 import NoImage from './images/no_image.jpg';
@@ -9,6 +8,7 @@ import SearchBar from '../components/elements/SearchBar';
 import Grid from '../components/elements/Grid';
 import MovieThumb from '../components/elements/MovieThumb';
 import LoadMoreBtn from '../components/elements/LoadMoreBtn';
+import { BACKDROP_SIZE, IMAGE_BASE_URL, POPULAR_BASE_URL, POSTER_SIZE, SEARCH_BASE_URL } from '../config';
 
 const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
