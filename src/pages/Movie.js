@@ -1,11 +1,11 @@
 import React from 'react';
-import Navigation from "./Navigation";
-import MovieInfo from "./MovieInfo";
-import MovieInfoBar from "./MovieInfoBar";
-import Grid from "./elements/Grid";
-import Actor from "./Actor";
-import Spinner from "./elements/Spinner";
-import {useMovieFetch} from "./hooks/useMovieFetch";
+import Navigation from "../components/Navigation";
+import MovieInfo from "../components/MovieInfo";
+import MovieInfoBar from "../components/MovieInfoBar";
+import Grid from "../components/elements/Grid";
+import Actor from "../components/Actor";
+import Spinner from "../components/elements/Spinner";
+import {useMovieFetch} from "../components/hooks/useMovieFetch";
 
 const Movie = ({ movieId }) => {
     const [movie, loading, error] = useMovieFetch(movieId);
