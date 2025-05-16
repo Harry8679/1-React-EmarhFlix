@@ -1,9 +1,6 @@
 import React from 'react';
-// import { createGlobalStyle } from "styled-components";
 import Home from "./Home";
 import { Router } from "@reach/router";
-
-
 import { GlobalStyle } from "./styles/GlobalStyle";
 import Header from './components/elements/Header';
 import Movie from './pages/Movie';
